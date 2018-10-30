@@ -18,7 +18,9 @@ Copyright (c) 2013-2018 brinkqiang (brink.qiang@gmail.com)
 
 ## Intro
 dmservice
-```cpp
+```
+windows 使用nssm实现
+linux 待定
 ```
 ## Contacts
 [![Join the chat](https://badges.gitter.im/brinkqiang/dmservice/Lobby.svg)](https://gitter.im/brinkqiang/dmservice)
