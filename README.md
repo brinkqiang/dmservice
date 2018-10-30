@@ -18,9 +18,33 @@ Copyright (c) 2013-2018 brinkqiang (brink.qiang@gmail.com)
 
 ## Intro
 dmservice
-```
+
 windows 使用nssm实现
+```
+nssm install <servicename>
+nssm install <servicename> <program> [<arguments>]
+nssm start <servicename>
+nssm stop <servicename>
+nssm restart <servicename>
+nssm edit <servicename>
+nssm remove <servicename>
+nssm remove <servicename> confirm
+
+如下是一个安装Jenkins服务的示例：
+nssm install Jenkins %PROGRAMFILES%\Java\jre7\bin\java.exe
+nssm set Jenkins AppParameters -jar slave.jar -jnlpUrl https://jenkins/computer/%COMPUTERNAME%/slave-agent.jnlp -secret redacted
+nssm set Jenkins AppDirectory C:\Jenkins
+nssm set Jenkins AppStdout C:\Jenkins\jenkins.log
+nssm set Jenkins AppStderr C:\Jenkins\jenkins.log
+nssm set Jenkins AppStopMethodSkip 6
+nssm set Jenkins AppStopMethodConsole 1000
+nssm set Jenkins AppThrottle 5000
+nssm start Jenkins
+
+```
+
 linux 待定
+```
 ```
 ## Contacts
 [![Join the chat](https://badges.gitter.im/brinkqiang/dmservice/Lobby.svg)](https://gitter.im/brinkqiang/dmservice)
