@@ -1,5 +1,4 @@
 #include "nssm.h"
-
 extern const TCHAR *hook_event_strings[];
 extern const TCHAR *hook_action_strings[];
 

@@ -1,5 +1,8 @@
 #include "nssm.h"
 
+#pragma comment(lib, "psapi.lib")
+#pragma comment(lib, "shlwapi.lib")
+
 extern unsigned long tls_index;
 extern bool is_admin;
 extern imports_t imports;

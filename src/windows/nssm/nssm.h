@@ -46,6 +46,8 @@
 #include <shlwapi.h>
 #include <stdarg.h>
 #include <stdio.h>
+#include <commdlg.h>
+#include <shellapi.h>
 #include "utf8.h"
 #include "service.h"
 #include "account.h"
